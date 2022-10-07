@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    color: #495057;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-image: url('../images/home_bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.wrapper{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    text-align: center;
+    /* margin-bottom: 25px; */
+}
+.header p{
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+#id, #password{
+    outline: none;
+    display: block;
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 10px;
+}
+
+#id:focus, #password:focus{
+    border-color: #a9bcee;
+    box-shadow: 0 0 0 .2rem rgb(0 123 255 / 25%);
+}
+.apply{
+    font-size: 1.1rem;
+    padding-top: 8px;
+    padding-bottom: 15px;
+}
+.apply a{
+    color: #3f6ad8;
+    text-decoration: none;
+}
+.apply a:hover{
+    text-decoration: underline;
+}
+.form-group, .form-footer, .apply, .header{
+    padding: 15px;
+}
+
+.divider{
+    border-bottom: 1px solid #e9ecef;
+}
+
+.form-footer{
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid #e9ecef;
+    background-color: #f8f9fa;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.form-footer button{
+    outline: none;
+    padding: 10px 18px;
+    display: inline-block;
+    border: 1px solid #3AC47D;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form-footer button:first-child{
+    color: #3AC47D;
+    background-color: white;
+    margin-right: 10px;
+}
+
+.form-footer button:first-child:hover{
+    color: white;
+    background-color: #3AC47D;
+    /* transition-duration: 1s; */
+}
+
+.form-footer button:last-child{
+    color: white;
+    background-color: #3AC47D;
+}
+
+.form-footer button:last-child:hover{
+    background-color: #31b16f;
+}
+
+.box{
+    z-index: 100;
+    opacity: 1;
+    background-color: #FFFFFF;
+    width: 38%;
+    border-radius: 5px;
+}
